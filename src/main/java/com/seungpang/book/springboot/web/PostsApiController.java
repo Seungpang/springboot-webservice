@@ -6,8 +6,10 @@ import com.seungpang.book.springboot.web.dto.PostsResponseDto;
 import com.seungpang.book.springboot.web.dto.PostsSaveRequestDto;
 import com.seungpang.book.springboot.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.web.bind.annotation.*;
 
+@EnableJpaAuditing // JPA Auditing 활성화
 @RequiredArgsConstructor
 @RestController
 public class PostsApiController {
