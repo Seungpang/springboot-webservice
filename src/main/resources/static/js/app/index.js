@@ -5,7 +5,7 @@ var main = {
             _this.save();
         });
 
-        $('btn-update').on('click',function () {
+        $('#btn-update').on('click',function () {
             _this.update();
         });
     },
@@ -30,7 +30,7 @@ var main = {
         });
     },
     update : function () {
-        var date = {
+        var data = {
             title: $('#title').val(),
             content: $('#content').val()
         };
