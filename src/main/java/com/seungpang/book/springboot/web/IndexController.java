@@ -1,7 +1,6 @@
 package com.seungpang.book.springboot.web;
 
 import com.seungpang.book.springboot.service.PostsService;
-import com.seungpang.book.springboot.web.domain.posts.PostsRepository;
 import com.seungpang.book.springboot.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;

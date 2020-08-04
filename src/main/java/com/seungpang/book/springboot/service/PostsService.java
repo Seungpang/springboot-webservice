@@ -1,7 +1,7 @@
 package com.seungpang.book.springboot.service;
 
-import com.seungpang.book.springboot.web.domain.posts.Posts;
-import com.seungpang.book.springboot.web.domain.posts.PostsRepository;
+import com.seungpang.book.springboot.domain.posts.Posts;
+import com.seungpang.book.springboot.domain.posts.PostsRepository;
 import com.seungpang.book.springboot.web.dto.PostsListResponseDto;
 import com.seungpang.book.springboot.web.dto.PostsResponseDto;
 import com.seungpang.book.springboot.web.dto.PostsSaveRequestDto;
