@@ -1,5 +1,6 @@
 package com.seungpang.book.springboot.web;
 
+import com.seungpang.book.springboot.config.auth.LoginUser;
 import com.seungpang.book.springboot.config.auth.dto.SessionUser;
 import com.seungpang.book.springboot.service.PostsService;
 import com.seungpang.book.springboot.web.dto.PostsResponseDto;
@@ -16,13 +17,11 @@ import javax.servlet.http.HttpSession;
 public class IndexController {
 
     private final PostsService postsService;
-    private final HttpSession httpSession;
 
     @GetMapping("/")
-    public String index(Model model) {
+    public String index(Model model, @LoginUser SessionUser user) {
         model.addAttribute("posts", postsService.findAllDese());
 
-        SessionUser user = (SessionUser) httpSession.getAttribute("user");
         if(user != null){
             model.addAttribute("userName", user.getName());
         }
